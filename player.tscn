@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://c74s15v6syf40"]
+
+[ext_resource type="Script" path="res://character_body_2d.gd" id="1_nd8kg"]
+[ext_resource type="Texture2D" uid="uid://bw2gi6ckbh6jx" path="res://assets/5228055c3a0be6380d900f3321d7a206-blue-marble-ball-removebg-preview.png" id="2_1ouqm"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g36nb"]
+radius = 95.0
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+z_index = 1
+z_as_relative = false
+y_sort_enabled = true
+scale = Vector2(0.2, 0.2)
+script = ExtResource("1_nd8kg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1, 19)
+scale = Vector2(0.96875, 1.00781)
+texture = ExtResource("2_1ouqm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2.8026e-45, 6.01853e-36)
+shape = SubResource("CircleShape2D_g36nb")

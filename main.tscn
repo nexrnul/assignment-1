@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://o60lwlb4ajmo"]
+
+[ext_resource type="PackedScene" uid="uid://cs3a3i7no6wq8" path="res://tile_map.tscn" id="1_pugvc"]
+[ext_resource type="PackedScene" uid="uid://c74s15v6syf40" path="res://player.tscn" id="2_2v4kt"]
+
+[node name="main" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
+
+[node name="tile_map" parent="." instance=ExtResource("1_pugvc")]
+position = Vector2(-5, -13)
+
+[node name="CharacterBody2D" parent="tile_map" instance=ExtResource("2_2v4kt")]
+z_as_relative = true
+position = Vector2(6, -12)

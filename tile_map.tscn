@@ -1,0 +1,47 @@
+[gd_scene load_steps=5 format=3 uid="uid://cs3a3i7no6wq8"]
+
+[ext_resource type="Texture2D" uid="uid://bxffqfsmtpbc8" path="res://assets/iso_tileset.png" id="1_787et"]
+[ext_resource type="Script" path="res://tile_map.gd" id="2_pjdj0"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tk26w"]
+texture = ExtResource("1_787et")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, -8)
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, 0, 0, 8, 16, 0, 0, -8)
+1:0/0 = 0
+1:0/0/texture_origin = Vector2i(0, -8)
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, 0, 0, 8, 16, 0, 0, -8)
+2:0/0 = 0
+2:0/0/texture_origin = Vector2i(0, -8)
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, 0, 0, 8, 16, 0, 0, -8)
+3:0/0 = 0
+3:0/0/texture_origin = Vector2i(0, -8)
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, 0, 0, 8, 16, 0, 0, -8)
+4:0/0 = 0
+4:0/0/texture_origin = Vector2i(0, -8)
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, 0, 0, 8, 16, 0, 0, -8)
+5:0/0 = 0
+5:0/0/texture_origin = Vector2i(0, -8)
+5:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, 0, 0, 8, 16, 0, 0, -8)
+6:0/0 = 0
+6:0/0/texture_origin = Vector2i(0, -8)
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, 0, 0, 8, 16, 0, 0, -8)
+
+[sub_resource type="TileSet" id="TileSet_dh04w"]
+tile_shape = 1
+tile_layout = 5
+tile_offset_axis = 1
+tile_size = Vector2i(32, 16)
+physics_layer_0/collision_layer = 1
+sources/7 = SubResource("TileSetAtlasSource_tk26w")
+
+[node name="TileMap" type="TileMap"]
+z_as_relative = false
+y_sort_enabled = true
+position = Vector2(1, 0)
+tile_set = SubResource("TileSet_dh04w")
+format = 2
+layer_0/y_sort_enabled = true
+layer_0/tile_data = PackedInt32Array(65533, 7, 0, -3, 7, 0, -65539, 7, 0, -65538, 7, 0, -65537, 7, 0, -131072, 7, 0, -65536, 7, 0, 0, 7, 0, 65536, 7, 0, 131071, 7, 0, 131070, 7, 0, 131069, 7, 0, -2, 196615, 0, 65534, 196615, 0, 65535, 196615, 0, -1, 196615, 0, -131075, 7, 0, -131074, 7, 0, -131073, 7, 0, -196608, 7, 0, -262144, 7, 0, -196609, 7, 0, -196610, 7, 0, -196611, 7, 0, -458755, 7, 0, -393219, 7, 0, -458754, 7, 0, -393218, 7, 0, -458753, 7, 0, -393217, 7, 0, -524288, 7, 0, -458752, 7, 0, -327683, 7, 0, -262147, 7, 0, -327682, 7, 0, -262146, 7, 0, -327681, 7, 0, -262145, 7, 0, -393216, 7, 0, -327680, 7, 0, -589827, 7, 0, -524291, 7, 0, -589826, 7, 0, -524290, 7, 0, -589825, 7, 0, -524289, 7, 0, -655360, 7, 0, -589824, 7, 0, 1, 7, 0, 65537, 7, 0, 2, 7, 0, 65538, 7, 0, 3, 7, 0, 65539, 7, 0, 4, 7, 0, 65540, 7, 0, -131071, 7, 0, -65535, 7, 0, -131070, 7, 0, -65534, 7, 0, -131069, 7, 0, -65533, 7, 0, -131068, 7, 0, -65532, 7, 0, 5, 7, 0, 65541, 7, 0, 6, 7, 0, 65542, 7, 0, 7, 7, 0, 65543, 7, 0, 8, 7, 0, 65544, 7, 0, -131067, 7, 0, -65531, 7, 0, -131066, 7, 0, -65530, 7, 0, -131065, 7, 0, -65529, 7, 0, -131064, 7, 0, -65528, 7, 0)
+script = ExtResource("2_pjdj0")
